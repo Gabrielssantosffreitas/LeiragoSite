@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        :root {
+    --black: #0b0b0b;
+    --dark: #141414;
+    --red: #b11226;
+    --red-soft: #e63946;
+    --text: #f2f2f2;
+    --muted: #b5b5b5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+/* BIO */
+.bio-section {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.bio-section p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+/* SOCIAIS */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--red);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: var(--red);
+}
+
+/* SERVIÇOS */
+.services h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--red-soft);
+}
+
+/* CARD */
+.card {
+    display: block;
+    background: var(--dark);
+    border: 1px solid #1f1f1f;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--red);
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--red-soft);
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.card ul li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+/* META */
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text);
+    border-top: 1px solid #222;
+    padding-top: 10px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leirago | Mago do Caos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <!-- BIO -->
+    <section class="bio-section">
+        <p>🔮 Tarot para relações confusas</p>
+        <p>🖤 Apego, saudade e decisões difíceis</p>
+        <p>✨ Clareza antes de agir</p>
+        <p>📩 Leituras no direct</p>
+    </section>
+
+    <!-- REDES -->
+    <section class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </section>
+
+    <!-- LEITURAS -->
+    <section class="services">
+        <h1>Leituras</h1>
+
+        <a class="card" href="https://wa.me/5531993027452?text=Leitura de Clareza Amorosa">
+            <h2>Clareza Amorosa</h2>
+
+            <ul>
+                <li>1 pergunta sobre a situação amorosa</li>
+                <li>Foco em sentimentos e dinâmica</li>
+                <li>Resposta por áudio ou texto</li>
+            </ul>
+
+            <div class="meta">
+                <span>⏱️ até 15 min</span>
+                <span>💰 R$15–30</span>
+            </div>
+        </a>
+
+        <a class="card" href="https://wa.me/5531993027452?text=Leitura de Relacionamento Completa">
+            <h2>Relacionamento Completo</h2>
+
+            <ul>
+                <li>Análise do vínculo atual</li>
+                <li>Sentimentos das duas partes</li>
+                <li>Influências do momento</li>
+                <li>Orientação prática</li>
+            </ul>
+
+            <div class="meta">
+                <span>⏱️ 30–40 min</span>
+                <span>💰 R$60–120</span>
+            </div>
+        </a>
+
+    </section>
+
+</main>
+
+</body>
+</html>
